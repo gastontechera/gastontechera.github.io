@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(220,80,80);
+}
+main {
+    flex: 1 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.navegacion {
+    border: 2rem;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: rgb(32, 32, 32);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.desarrollador-frontend {
+    color:black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#imagen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen-1 {
+    opacity: 0.95;
+    max-width: 80%;
+    margin: 1rem;
+}
+
+#descripcion-container {
+    display: flex;
+    align-items: center;
+    margin: 0 8rem 0 8rem;
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label, input, textarea {
+    display: block;
+    text-align: center;
+}
+
+#enviar {
+    font-family: 'Oswald', sans-serif;
+}
+
+#footer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0.3rem 0 0.3rem 0;
+}
