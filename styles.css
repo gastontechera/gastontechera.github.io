@@ -1,38 +1,48 @@
-html, body {
+html,
+body {
     height: 100%;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 body {
     display: flex;
     flex-direction: column;
 }
 
-header {
-    background-color: rgb(220,80,80);
+.navbar-nav .nav-link {
+    padding: 0;
 }
-main {
-    flex: 1 0 auto;
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.2rem;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
 }
 
 h1 {
-    color: white;
-    text-align: center;
     font-weight: 500;
     font-size: 3.2rem;
     margin-bottom: 0;
+}
+
+.contacto {
+    margin-bottom: -2.3rem;
 }
 
 h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
 h4 {
+    font-size: 1rem;
     font-weight: 300;
     margin: 0;
 }
@@ -42,42 +52,17 @@ p {
     margin-top: 0;
 }
 
-.navegacion {
-    border: 2rem;
-    margin: 0;
-}
-.nav {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    padding: 0.5rem 0 0.5rem 0;
-    background-color: rgb(32, 32, 32);
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
 .desarrollador-frontend {
-    color:black;
-    text-align: center;
+    color: black;
     font-weight: 300;
     font-size: 1.6rem;
     margin-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-#imagen-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #imagen-1 {
     opacity: 0.95;
-    max-width: 80%;
+    max-width: 70%;
     margin: 1rem;
 }
 
@@ -87,7 +72,6 @@ a {
     margin: 0 8rem 0 8rem;
     justify-content: center;
     text-align: justify;
-    
 }
 
 .form-container {
@@ -101,7 +85,9 @@ a {
     margin-bottom: 1rem;
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
     display: block;
     text-align: center;
 }
@@ -110,13 +96,27 @@ label, input, textarea {
     font-family: 'Oswald', sans-serif;
 }
 
-#footer {
-    background-color: rgb(32, 32, 32);
-    color: white;
-    font-size: 1rem;
-    font-weight: 100;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 0.3rem 0 0.3rem 0;
+.bg-custom-red {
+    background-color: rgb(220, 80, 80);
+}
+
+main {
+    flex-grow: 1;
+}
+
+.form-container {
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+}
+
+.form-control {
+    border-color: gray;
+    border-radius: 0;
+    height: 30px;
+}
+
+#enviar {
+    margin-bottom: 1rem;
+    color: black;
+    background-color: gainsboro;
 }
