@@ -119,4 +119,5 @@ main {
     margin-bottom: 1rem;
     color: black;
     background-color: gainsboro;
+    border-radius: 0.3rem;
 }
